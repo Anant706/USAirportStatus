@@ -1,0 +1,26 @@
+x canary test
+x sort list of no airports
+x sort list of one airport
+x sort list of two airports already in sorted order of name
+x sort list of two airports not in sorted order
+x sort list of three airports
+x pass an empty list of airport code, get an empty list of airports
+x pass a list with one airport code, get a list with one airport with name filled in
+x pass a list with two airport codes, get a list with two airports
+x pass a list with two airport codes, get a sorted list with two airports
+x pass a list with three airport codes, get a sorted list with three airports
+x one airport code given is invalid
+x two airport codes given, second is invalid
+x three airport codes given, second is invalid
+x three airport codes given, first is invalid, third runs into a network error
+x given code, getJSON returns JSON from the service URL
+x create Airport given valid JSON
+x verify the Airport has code, name, city, state, temperature, delay
+x get exception given JSON with no airport name
+x fetchData calls getJSON 
+x fetchData calls createAirport with respond from getJSON
+x fetchData returns the Airport returned by createAirport
+x fetchData propagates the exception from createAirport
+x fetchData propagates the exception from getJSON
+
+

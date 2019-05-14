@@ -1,0 +1,57 @@
+Assign2: Due 11:59PM March 1st
+
+Take small steps. Start with a canary test and one or two more tests.
+List your tests in a file named tests.txt. Check them off with a x as you 
+implement them. Remember to ask for a review each day. The earlier you start,
+the earlier you finish, the less the risk. If you start late, you carry a 
+bigger risk. Your call. Now to the problem.
+
+A file contains a list of airport codes, one line each. For example:
+IAH
+IAD
+SFO
+LAX
+PHX
+PDX
+ORD
+BWI
+MSP
+
+The webservice at <https://soa.smext.faa.gov/asws/api/airport/status/IAH> 
+returns a few details at the airport, including name, city, state, 
+temperature, and delay. You can replace IAH with other codes to get details about other airports.
+
+Write a console application that will list the following output:
+
+-----
+Name  City  State  Temperature  Delay?
+... rows sorted by the name of the airport ...
+
+Error getting details for:
+... rows of airport codes for which there was an error ...
+-----
+
+For Delay, leave it blank if there is no delay, otherwise print a symbol to indicate a delay. 
+
+The program should gracefully handle invalid airport codes and also network errors.
+                                    
+Please bring forward the practices, techniques, and tools you have learned so far. This includes:                                                       
+Daily code reviews
+Good code quality
+Lightweight design
+Minimum code
+Automated testing                                                         
+Code coverage
+Build files (I created them for you in assign1, but it's your turn now)
+Change build.bat in your repository to point to assign2 instead of assign1
+
+
+Total [100]: 100
+Program runs and produces desired output [20]:
+Program fails gracefully on network error[5]:
+All tests pass [10]:
+Test quality [20]:
+All tests except one do not rely on network [5]:
+Code coverage [10]:
+Design quality [20]:
+Code quality [10]:
